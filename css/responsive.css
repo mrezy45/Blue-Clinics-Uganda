@@ -1,0 +1,109 @@
+@media (max-width: 768px) {
+  /* General container adjustments */
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  /* Top bar */
+  .top-bar .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  /* Navbar */
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .navbar.active ul {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Hero Section */
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Abortion services */
+  .abortion-services .container {
+    flex-direction: column;
+  }
+
+  .abortion-services .right-content {
+    flex-direction: column;
+  }
+
+  .abortion-services .card {
+    margin-bottom: 1rem;
+  }
+
+  /* Offerings section */
+  .offerings .cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Image slider */
+  .slider-container {
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 15px;
+  }
+
+  /* Testimonials */
+  .testimonials .cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Contact section */
+  .contact .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact form,
+  .contact img {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  footer .left,
+  footer .middle,
+  footer .right {
+    width: 100%;
+  }
+}
