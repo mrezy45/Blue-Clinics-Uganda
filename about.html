@@ -6,6 +6,7 @@
   <title>BLUE CLINICS UGANDA</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <!-- Top Section -->
@@ -20,22 +21,28 @@
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="logo">BLUE CLINICS UGANDA</a>
-      <ul>
-        <li><a href="services.html">Services</a></li>
-        <li>
-          <a href="#">Health Screenings <i class="fas fa-caret-down"></i></a>
-          <ul class="dropdown">
-            <li><a href="#">STI/STD</a></li>
-            <li><a href="#">HIV</a></li>
-            <li><a href="#">Cancer</a></li>
-          </ul>
-        </li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="tel:+1234567890"><i class="fas fa-phone"></i>+256 776 654 359 / +256 700 376 654</a></li>
-      </ul>
+      <div class="menu">
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li>
+            <a href="#">Health Screenings <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="#">STI/STD</a></li>
+              <li><a href="#">HIV</a></li>
+              <li><a href="#">Cancer</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="tel:+256776654359"><i class="fas fa-phone"></i>+256 776 654 359 / +256 700 376 654</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+     </div>
   </nav>
+
 
   <!-- Mission and Vision Section -->
   <section class="mission-vision">
@@ -52,7 +59,7 @@
   <!-- Founding Story Section -->
   <section class="founding">
     <div class="container">
-      <img src="../assests/images/image5.jpg" alt="Founding Story">
+      <img src="../assets/images/image5.jpg" alt="Founding Story">
       <div class="content">
         <h2>Our Founding</h2>
         <p>Founded in 2014, our clinic was born out of a passion for serving the community with empathy and professionalism. Over the years, we have grown to become a trusted name in healthcare.</p>
@@ -67,7 +74,7 @@
         <h2>Growth & Beyond</h2>
         <p>From a small practice to a comprehensive healthcare facility, our growth reflects our commitment to excellence. We continue to expand our services and reach to meet the evolving needs of our community.</p>
       </div>
-      <img src="../assests/images/image6.jpg" alt="Growth Story">
+      <img src="../assets/images/image6.jpg" alt="Growth Story">
     </div>
   </section>
 
@@ -76,55 +83,43 @@
     <h2>Our Team</h2>
     <div class="container">
       <div class="team-member">
-        <img src="assests/images/team5.jpg" alt="Team Member 1">
+        <img src="assets/images/team5.jpg" alt="Team Member 1">
         <h3>Dr. Misanvu Steven</h3>
         <p>Chief Medical Officer</p>
       </div>
       <div class="team-member">
-        <img src="assests/images/team1.jpg" alt="Team Member 2">
-        <h3>Dr. James Carter</h3>
-        <p>Gynecologist</p>
+        <img src="assets/images/team1.jpg" alt="Team Member 2">
+        <h3>Nasasira Nickson</h3>
+        <p>Clinicial Officer</p>
       </div>
       <div class="team-member">
-        <img src="assests/images/team2.jpg" alt="Team Member 3">
-        <h3>Dr. Emily Richards</h3>
-        <p>Family Planning Specialist</p>
+        <img src="assets/images/team2.jpg" alt="Team Member 3">
+        <h3>Namakula Anita</h3>
+        <p>Midwife & Nurse</p>
       </div>
       <div class="team-member">
-        <img src="assests/images/team3.jpg" alt="Team Member 4">
-        <h3>Dr. John Wilson</h3>
-        <p>Pathologist</p>
+        <img src="assets/images/team3.jpg" alt="Team Member 4">
+        <h3>Kanyago Stella</h3>
+        <p>Nurse</p>
       </div>
       <div class="team-member">
-        <img src="assests/images/team4.jpg" alt="Team Member 4">
-        <h3>Dr. John Wilson</h3>
+        <img src="assets/images/team4.jpg" alt="Team Member 4">
+        <h3>Nahwera Apophia</h3>
         <p>Lab Technician</p>
       </div>
     </div>
   </section>
 
    <!-- Contact Section -->
-   <section class="contact">
-    <h2>Reach Out to Us</h2>
-    <div class="container">
-      <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <textarea placeholder="Message" required></textarea>
-        <button type="submit" class="btn">Submit Inquiry</button>
-      </form>
-      <img src="../assests/images/contact.png" alt="Contact Image">
-    </div>
-    
-  </section>
+   
 
-  <!-- Footer -->
+ <!-- Footer -->
   <footer>
     <div class="container">
       <div class="left">
         <h1>Blue Clinics Uganda</h1>
-        <p>We offer compassionate healthcare services for your well-being and peace of mind.</p>
+        <p>At Blue Clinics Uganda, we are committed to delivering high-quality, affordable healthcare with compassion and professionalism. 
+          Your health and well-being are our top priority every step of the way.</p>
       </div>
       <div class="middle">
         <h2>Quick Links</h2>
@@ -144,13 +139,15 @@
         <p><i class="fas fa-envelope"></i>blueclinics@gmail.com</p>
         <p><i class="fas fa-map-marker-alt"></i>Mbarara High Street Opposite Grand West Arcade</p>
         <p><i class="fas fa-clock"></i> Mon-Fri: 9AM - 5PM</p>
+        <div class="social-icons">
+          <i class="fas fa-phone"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
       </div>
     </div>
-    <div class="social-icons">
-      <i class="fas fa-phone"></i>
-      <i class="fa-brands fa-facebook"></i>
-      <i class="fa-brands fa-whatsapp"></i>
-    </div>
+    
   </footer>
+  <script src="Javascript/main.js"></script>
 </body>
 </html>
